@@ -2,31 +2,31 @@
 
 ## 目录解析
 
-![Android项目常规目录](.\img\image-20230803163629743.png)
+![Android项目常规目录](./img/project_directory.png)
 
-- <u>*FuuComposePlugin*</u> 
+- <u>*FuuComposePlugin*</u>
 
   这是初始创建的项目，该项目包括两个app项目（app/news_lib），以及构建工具gradle。真正我们写的app是在app这种模块中的代码打包出来的，而app/news_lib模块以外的都是用于构建app
 
-  
+
 
 - <u>*gradle*</u>
 
   gradle的配置，在这里面可以设置gradle的版本，和其他配置
 
-  
+
 
 - <u>*settings.build.kts*</u>
 
   配置整个项目的的gradle插件配置等
 
-  
+
 
 - <u>*app/news_lib(我自己创建的模块)*</u>
 
   这是两个是独立的apk应用
 
-  ![image-20230803164748519](.\img\image-20230803164748519.png)
+  ![app目录](./img/app_directory.png)
 
 以app模块为例,
 
