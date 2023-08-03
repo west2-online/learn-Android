@@ -2,7 +2,7 @@
 
 ## 目录解析
 
-![Android项目常规目录](C:\Users\20150\Desktop\Android Gradle\AndroidGradle\image-20230803163629743.png)
+![Android项目常规目录](.\img\image-20230803163629743.png)
 
 - <u>*FuuComposePlugin*</u> 
 
