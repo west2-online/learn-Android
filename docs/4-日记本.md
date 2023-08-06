@@ -1,0 +1,61 @@
+# 西二在线 Android 第四轮考核：日记本
+
+## 一、知识点
+
+* Room 数据库
+* Glide 图片框架
+* Retrofit2 网络请求框架
+* RecyclerView 的进一步使用
+
+## 二、参考教程
+
+* 第一行代码（先看）
+* [Android图片加载框架最全解析（一），Glide的基本用法](https://blog.csdn.net/guolin_blog/article/details/53759439)
+* [Retrofit2 详解和使用（一）](https://blog.csdn.net/m0_37796683/article/details/90702095)
+
+## 三、考核内容
+
+设计一个简单的日记本程序。
+
+ - 本地保存日记到数据库中，自行设计数据库结构，注意合理性；
+ - 支持从本地选择插入图片，输入链接插入网络图片，并进行展示；
+
+​		``暂时可以不考虑图文混排，即简单地将图片和文字分开展示，当然能做到更好``
+
+* 使用 RecyclerView 展示日记列表，可以是单列，也可以是其他形式；支持通过文字搜索，筛选到符合的日记；
+
+* 自动获取当地当天城市天气，一同存入数据库：使用和风天气提供的免费 API 来完成任务
+
+  * [和风开发者平台官网 (qweather.com)](https://dev.qweather.com/)
+
+  * [和风天气WebApi使用教程](https://www.cnblogs.com/6543x1/p/15684812.html)
+
+  * 使用的 API
+
+    * 城市查询 API，用于查询城市的 城市ID（id）、纬度（lat）、经度（lon）等城市信息
+
+      [https://geoapi.qweather.com/v2/city/lookup?key=这里填你的key&location=要查询的城市名字](https://geoapi.qweather.com/v2/city/lookup?key=这里填你的key&location=要查询的城市名字)
+
+    * 三日天气查询 API，用于查询某地今日、明日、后日的天气信息
+
+      [https://devapi.qweather.com/v7/weather/3d?key=这里填你的key&location=要查询的城市的id](https://devapi.qweather.com/v7/weather/3d?key=这里填你的key&location=要查询的城市的id)
+
+    * 以上 api 返回信息均为 json 格式，Retrofit2 附带的 Gson 可以直接进行实例化解析
+
+      ``日期、经纬度可以让用户手动输入，如能够通过 CalendarView 控件输入日期，利用 GPS 定位获取经纬度，则更佳``
+
+## 四、Bonus（加分项）
+
+* 通过 CalendarView 控件指定日期，利用 GPS 定位获取经纬度；
+* 使用 ViewModel 等技术，使得界面与数据分离；
+* 增加对图文混排的支持；
+* 支持导出（以图片或其他形式，可随意发挥）；
+* 在保证功能的同时，使界面交互简洁大方；
+* 了解一些减小安装包体积的办法并加以运用（如Minify）；
+* 非必要的情况下，尽量少地申请权限。
+
+## 五、注意事项
+
+* 必须使用 Kotlin 作为主要开发语言。
+* 上传源码至 GitHub，将编译好的 apk 放在 GitHub Release 中。
+* 注意规范性，以及项目结构的合理性。
