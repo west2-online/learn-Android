@@ -11,10 +11,10 @@
 
 * 自定义 View/动画教程：https://rengwuxian.com/
 * Compose 布局/动画教程：安卓官方，在谷歌上中文搜索 jetpack compose 即可，比如动画教程：https://developer.android.com/jetpack/compose/animation?hl=zh-cn
-* Compose 控件大全: 
-> 1.https://composables.com/;  
-> 2.https://jetpackcompose.cn/docs/;  
-> 3.见文末.
+* Compose 控件大全:
+   1. https://composables.com/
+   2. https://jetpackcompose.cn/docs/
+   3. 见文末.
 
 ## 三、考核内容
 
